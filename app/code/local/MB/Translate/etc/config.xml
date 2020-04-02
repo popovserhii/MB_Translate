@@ -19,6 +19,20 @@
             </mb_translate>
         </helpers>
     </global>
+    <frontend>
+        <events>
+            <!-- this name is really important, use this to indicate the layout-render-before event -->
+            <controller_action_layout_render_before_catalog_category_view>
+                <observers>
+                    <mb_translate_category_handlers>
+                        <type>singleton</type>
+                        <class>MB_Translate_Model_Observer</class>
+                        <method>addCategoryDescriptionTranslate</method>
+                    </mb_translate_category_handlers>
+                </observers>
+            </controller_action_layout_render_before_catalog_category_view>
+        </events>
+    </frontend>
     <adminhtml>
         <translate>
             <modules>

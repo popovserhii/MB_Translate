@@ -1,13 +1,20 @@
 {
-    "name": "mb/translate",
-    "type": "magento-module",
-    "license":"OSL-3.0",
-    "description":"Translate CMS Pages in Magento 1.x",
-    "homepage":"https://github.com/miguelbalparda/MB_Translate",
-    "authors":[
-        {
-            "name":"Miguel Balparda",
-            "email":"miguel.balparda@moozo.com.ar"
-        }
+  "name": "mb/translate",
+  "type": "magento-module",
+  "license": "OSL-3.0",
+  "description": "Translate directive in CMS Pages, Category description and name in Magento 1.x",
+  "homepage": "https://github.com/miguelbalparda/MB_Translate",
+  "authors": [
+    {
+      "name": "Miguel Balparda",
+      "email": "miguel.balparda@moozo.com.ar"
+    }
+  ],
+  "extra": {
+    "map": [
+      ["app/etc/modules/MB_Translate.xml", "app/etc/modules/MB_Translate.xml"],
+      ["app/code/local/MB/Translate/", "app/code/community/MB/Translate/"],
+      ["app/locale/en_US/MB_Translate.csv", "app/locale/en_US/MB_Translate.csv"]
     ]
+  }
 }
